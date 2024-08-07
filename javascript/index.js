@@ -1,41 +1,43 @@
-var swiper = new Swiper(".featured__slider", {
-  spaceBetween: 10,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
+var swiper = new Swiper(".featured-slider", {
+    spaceBetween: 10,
+    loop:true,
+    centeredSlides:true,
+    autoplay: {
       delay: 9500,
-      disableOnInteraction: false,
-  },
-  navigation: {
-      nextEl: ".swiper__button--next",
-      prevEl: ".swiper__button--prev",
-  },
-  breakpoints: {
+      disableOnInteracton: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    breakpoints: {
       0: {
-          slidesPerView: 1,
+        slidesPerView: 1,
       },
       450: {
-          slidesPerView: 2,
+        slidesPerView: 2,
       },
       768: {
-          slidesPerView: 3,
+        slidesPerView: 3,
       },
       1024: {
-          slidesPerView: 5,
+        slidesPerView: 5,
       },
-  },
-});
+    },
+  });
 
-function add() {
-  alert("Added to cart successfully!");
-}
-
-function validateForm() {
-  var email = document.getElementById("footer__email").value;
-
-  if (email == null || email == "") {
-      alert("Please enter your email");
-  } else {
-      alert("Thank you for subscribing!");
+  function add(){
+    alert("Added to cart Successfullyyy!")
   }
+
+  function validateform() {
+    var email = document.getElementById("email").value;
+
+   
+    if (email == null || email == "") {
+        alert("Please enter you email");
+    }
+    else {
+        alert("Thank you for subscription..!")
+    }
 }
